@@ -14,18 +14,18 @@ The five kiosk requirements are listed in [requirements.md](requirements.md).
 
 **Primary Actor:** Customer
 
-**Precondition:** I have selected a movie, showtime, and available seat.
+**Precondition:** The customer has selected a movie, showtime, and available seat.
 
 **Main Steps:**
 
-1. I start the ticket purchase for my selected movie, showtime, and seat.
-2. The kiosk shows me the ticket details.
-3. I check the details and confirm that I want to buy the ticket.
-4. The kiosk asks me to pay.
-5. I pay for the ticket.
-6. The kiosk checks that the seat is still available, completes the purchase, and shows a confirmation.
-7. I receive the ticket purchase confirmation.
+1. The customer starts the purchase for the selected ticket.
+2. The kiosk displays the movie, showtime, seat, and ticket details.
+3. The customer reviews and confirms the ticket details.
+4. The kiosk requests payment.
+5. The customer submits payment.
+6. The kiosk verifies payment and seat availability, completes the purchase, and displays a confirmation.
+7. The customer receives the purchase confirmation.
 
-**Postcondition:** My ticket is confirmed, and the seat is no longer available for that showtime.
+**Postcondition:** The ticket purchase is confirmed, and the seat is no longer available for that showtime.
 
 The [use-case diagram](diagrams/Movie-Kiosk-Use-Case.png) shows the three customer goals for this kiosk.
