@@ -1,0 +1,121 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Purchase-Ticket-Sequence" id="HD_0a2M4eZCiW2iRDTgT">
+    <mxGraphModel dx="1696" dy="840" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="870" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=25;fontStyle=1;fontColor=#202124;" value="Purchase Ticket Sequence Diagram" vertex="1">
+          <mxGeometry height="45" width="700" x="250" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="customer" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeColor=#30343B;fontSize=20;fontColor=#202124;" value="Customer" vertex="1">
+          <mxGeometry height="100" width="80" x="130" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="kiosk" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#30343B;strokeWidth=2;fillColor=#FFFFFF;fontSize=20;fontColor=#202124;" value="Kiosk Interface" vertex="1">
+          <mxGeometry height="54" width="170" x="335" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ticket" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#30343B;strokeWidth=2;fillColor=#FFFFFF;fontSize=20;fontColor=#202124;" value="Ticket Service" vertex="1">
+          <mxGeometry height="54" width="170" x="605" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="payment" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#30343B;strokeWidth=2;fillColor=#FFFFFF;fontSize=20;fontColor=#202124;" value="Payment Service" vertex="1">
+          <mxGeometry height="54" width="170" x="895" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="life-customer" edge="1" parent="1" style="endArrow=none;startArrow=none;dashed=1;dashPattern=6 5;strokeColor=#70757A;strokeWidth=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="170" y="188" as="sourcePoint" />
+            <mxPoint x="170" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="life-kiosk" edge="1" parent="1" style="endArrow=none;startArrow=none;dashed=1;dashPattern=6 5;strokeColor=#70757A;strokeWidth=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="174" as="sourcePoint" />
+            <mxPoint x="420" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="life-ticket" edge="1" parent="1" style="endArrow=none;startArrow=none;dashed=1;dashPattern=6 5;strokeColor=#70757A;strokeWidth=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="174" as="sourcePoint" />
+            <mxPoint x="690" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="life-payment" edge="1" parent="1" style="endArrow=none;startArrow=none;dashed=1;dashPattern=6 5;strokeColor=#70757A;strokeWidth=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="980" y="174" as="sourcePoint" />
+            <mxPoint x="980" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="message-1" edge="1" parent="1" style="endArrow=block;endFill=1;startArrow=none;html=1;rounded=0;strokeColor=#30343B;strokeWidth=2;fontSize=19;fontColor=#202124;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=7;" value="Select showtime">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="170" y="222" as="sourcePoint" />
+            <mxPoint x="420" y="222" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="message-2" edge="1" parent="1" style="endArrow=block;endFill=1;startArrow=none;html=1;rounded=0;strokeColor=#30343B;strokeWidth=2;fontSize=19;fontColor=#202124;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=7;" value="Request available seats">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="273" as="sourcePoint" />
+            <mxPoint x="690" y="273" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="message-3" edge="1" parent="1" style="endArrow=block;endFill=1;startArrow=none;html=1;rounded=0;strokeColor=#30343B;strokeWidth=2;fontSize=19;fontColor=#202124;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=7;dashed=1;dashPattern=6 4;" value="Return available seats">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="324" as="sourcePoint" />
+            <mxPoint x="420" y="324" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="message-4" edge="1" parent="1" style="endArrow=block;endFill=1;startArrow=none;html=1;rounded=0;strokeColor=#30343B;strokeWidth=2;fontSize=19;fontColor=#202124;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=7;" value="Select seat">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="170" y="375" as="sourcePoint" />
+            <mxPoint x="420" y="375" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="message-5" edge="1" parent="1" style="endArrow=block;endFill=1;startArrow=none;html=1;rounded=0;strokeColor=#30343B;strokeWidth=2;fontSize=19;fontColor=#202124;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=7;" value="Check seat availability">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="426" as="sourcePoint" />
+            <mxPoint x="690" y="426" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="message-6" edge="1" parent="1" style="endArrow=block;endFill=1;startArrow=none;html=1;rounded=0;strokeColor=#30343B;strokeWidth=2;fontSize=19;fontColor=#202124;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=7;dashed=1;dashPattern=6 4;" value="Seat available">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="477" as="sourcePoint" />
+            <mxPoint x="420" y="477" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="message-7" edge="1" parent="1" style="endArrow=block;endFill=1;startArrow=none;html=1;rounded=0;strokeColor=#30343B;strokeWidth=2;fontSize=19;fontColor=#202124;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=7;" value="Confirm ticket and pay">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="170" y="528" as="sourcePoint" />
+            <mxPoint x="420" y="528" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="message-8" edge="1" parent="1" style="endArrow=block;endFill=1;startArrow=none;html=1;rounded=0;strokeColor=#30343B;strokeWidth=2;fontSize=19;fontColor=#202124;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=7;" value="Purchase selected seat">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="579" as="sourcePoint" />
+            <mxPoint x="690" y="579" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="message-9" edge="1" parent="1" style="endArrow=block;endFill=1;startArrow=none;html=1;rounded=0;strokeColor=#30343B;strokeWidth=2;fontSize=19;fontColor=#202124;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=7;" value="Process payment">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="630" as="sourcePoint" />
+            <mxPoint x="980" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="message-10" edge="1" parent="1" style="endArrow=block;endFill=1;startArrow=none;html=1;rounded=0;strokeColor=#30343B;strokeWidth=2;fontSize=19;fontColor=#202124;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=7;dashed=1;dashPattern=6 4;" value="Payment approved">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="980" y="681" as="sourcePoint" />
+            <mxPoint x="690" y="681" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="message-11" edge="1" parent="1" style="endArrow=block;endFill=1;startArrow=none;html=1;rounded=0;strokeColor=#30343B;strokeWidth=2;fontSize=19;fontColor=#202124;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=7;dashed=1;dashPattern=6 4;" value="Ticket confirmed; seat sold">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="732" as="sourcePoint" />
+            <mxPoint x="420" y="732" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="message-12" edge="1" parent="1" style="endArrow=block;endFill=1;startArrow=none;html=1;rounded=0;strokeColor=#30343B;strokeWidth=2;fontSize=19;fontColor=#202124;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=7;" value="Display confirmation">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="783" as="sourcePoint" />
+            <mxPoint x="170" y="783" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
